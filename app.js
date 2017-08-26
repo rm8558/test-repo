@@ -5,7 +5,7 @@ var jsonParser=require('body-parser').json;
 var logger=require("morgan");
 var userRoutes=require('./userRoutes');
 
-var port=process.env.port||3000;
+var port=process.env.PORT||3000;
 var app=express();
 
 app.use(logger("dev"));
